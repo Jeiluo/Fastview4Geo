@@ -2,6 +2,10 @@
 //2025-2026
 //git@github.com:Jeiluo/Fastview4Geo.git
 
+//图像分块管理类
+//支持初始化、读取/写入块、缓存管理、合并所有块
+//关联 GDALDataset 进行大图分块操作
+
 #include <string>
 #include <map>
 #include <opencv2/opencv.hpp>

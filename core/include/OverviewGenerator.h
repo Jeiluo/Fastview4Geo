@@ -2,6 +2,12 @@
 //2025-2026
 //git@github.com:Jeiluo/Fastview4Geo.git
 
+
+//快视图生成器类
+//管理增强方法、颜色映射、目标尺寸、输出路径
+//创建合适的处理器（全色/多光谱）
+//提供批量生成和性能统计
+
 #ifndef OVERVIEWGENERATOR_H
 #define OVERVIEWGENERATOR_H
 
