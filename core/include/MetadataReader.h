@@ -7,6 +7,10 @@
 #include <map>
 #include "GdalCommon.h"
 
+//元数据读取类
+//提供读取波段信息、空间参考、像素尺寸、图像范围
+//内部结构 BandStats 用于统计信息
+
 // 图像元数据读取
 class MetadataReader {
 public:

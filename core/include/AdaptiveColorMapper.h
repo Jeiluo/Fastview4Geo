@@ -2,6 +2,8 @@
 //2025-2026
 //git@github.com:Jeiluo/Fastview4Geo.git
 
+//自适应颜色映射类,负责分析图像内容、选择颜色映射策略、创建自定义颜色表
+
 #include <string>
 #include <vector>
 #include <map>

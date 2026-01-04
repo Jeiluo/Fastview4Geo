@@ -2,6 +2,10 @@
 //2025-2026
 //git@github.com:Jeiluo/Fastview4Geo.git
 
+//多光谱影像处理类，继承自 ImageProcessor
+//波段合成、白平衡、色彩增强、直方图匹配等方法
+//保存波段顺序和色彩参考
+
 #ifndef MULTISPECTRALPROCESSOR_H
 #define MULTISPECTRALPROCESSOR_H
 

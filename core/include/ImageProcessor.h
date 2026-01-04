@@ -2,6 +2,10 @@
 //2025-2026
 //git@github.com:Jeiluo/Fastview4Geo.git
 
+//抽象基类 ImageProcessor
+//定义图像处理接口（加载、增强、颜色映射、生成快视图、获取类型）
+//包含 GDALDataset 指针，提供部分工具方法（resize、统计信息）
+
 #include <string>
 #include <opencv2/opencv.hpp>
 #include "OverviewGenerator.h"

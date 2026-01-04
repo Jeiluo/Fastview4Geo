@@ -2,6 +2,10 @@
 //2025-2026
 //git@github.com:Jeiluo/Fastview4Geo.git
 
+//全色影像处理类，继承自 ImageProcessor
+//各种增强方法（线性拉伸、直方图均衡化、Retinex、云雪/阴影检测等）
+//保存参考直方图和阈值参数
+
 #ifndef PANCHROMATICPROCESSOR_H
 #define PANCHROMATICPROCESSOR_H
 
