@@ -1,4 +1,4 @@
-//Jiahao Zhou and Haojun Tang
+//Jiahao Zhou, Haojun Tang
 //2025-2026
 //git@github.com:Jeiluo/Fastview4Geo.git
 

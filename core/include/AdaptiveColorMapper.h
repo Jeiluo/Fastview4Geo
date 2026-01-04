@@ -1,4 +1,4 @@
-//Jiahao Zhou and Haojun Tang
+//Jiahao Zhou, Haojun Tang
 //2025-2026
 //git@github.com:Jeiluo/Fastview4Geo.git
 
@@ -7,8 +7,8 @@
 #include <string>
 #include <vector>
 #include <map>
-#include <opencv2/opencv.hpp>
 #include "OverviewGenerator.h"
+#include <opencv2/opencv.hpp>
 
 // 自适应颜色映射
 class AdaptiveColorMapper {
