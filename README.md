@@ -85,10 +85,44 @@ mkdir build
 cd build
 mkdir libtiff
 cd libtiff
-cmake -G "MinGW Makefiles" ..\..\trd_party\libtiff\
-cmake --build .
+cmake ..\..\trd_party\libtiff\ -DCMAKE_BUILD_TYPE=Release
+cmake --build . --config Release
 cmake --install . --prefix ./install/
 cd ..
 编译至build/libtiff
 
+## 单独编译Sqlite
+cd .\trd_party\
+cd sqlite
+nmake /f makefile.msc
+mkdir ..\..\build\sqlite\install\include
+mkdir ..\..\build\sqlite\install\lib
+mkdir ..\..\build\sqlite\install\bin
+cp sqlite3.h ..\..\build\sqlite\install\include
+cp sqlite3.lib ..\..\build\sqlite\install\lib
+cp sqlite3.dll ..\..\build\sqlite\install\bin
+cp sqlite3.exe ..\..\build\sqlite\install\bin
+
+## 单独编译curl
+cd build
+mkdir curl
+cd curl
+cmake ..\..\trd_party\curl\ -DCMAKE_BUILD_TYPE=Release -DCURL_USE_LIBPSL=OFF
+cmake --build . --config Release
+cmake --install . --prefix ./install/
+cd ..
+
+## 单独编译PROJ
+cd .\build\
+mkdir PROJ
+cd PROJ
+cmake -DBUILD_PROJSYNC=OFF ..\..\trd_party\PROJ\ -DSQLITE3_INCLUDE_DIR="../../build/sqlite/install/include" -DSQLITE3_LIBRARY="../../build/sqlite/install/lib/sqlite3.lib" -DEXE_SQLITE3="../../build/sqlite/install/bin/sqlite3.exe" -DTIFF_INCLUDE_DIR="../../build/libtiff/install/include" -DTIFF_LIBRARY="../../build/libtiff/install/lib/tiff.lib" 
+
+## 单独编译TIFF
+
+
 ## 单独编译GDAL
+cd .\build\
+mkdir gdal
+cd gdal
+cmake -G "MinGW Makefiles" ..\..\trd_party\gdal\
