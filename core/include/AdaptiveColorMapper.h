@@ -8,7 +8,6 @@
 #include <vector>
 #include <map>
 #include "OverviewGenerator.h"
-#include <opencv2/opencv.hpp>
 
 // 自适应颜色映射
 class AdaptiveColorMapper {

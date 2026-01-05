@@ -125,7 +125,7 @@ cd..
 cd .\build\
 mkdir gdal
 cd gdal
-cmake ..\..\trd_party\gdal\ -DPROJ_INCLUDE_DIR="../../build/PROJ/install/include" -DPROJ_LIBRARY="../../build/PROJ/install/lib/proj.lib"
+cmake ..\..\trd_party\gdal\ -DPROJ_INCLUDE_DIR="$(Resolve-Path ../../build/PROJ/install/include)" -DPROJ_LIBRARY="$(Resolve-Path ../../build/PROJ/install/lib/proj.lib)"
 cmake --build . --config Release
 cmake --install . --prefix ./install/
 cd..

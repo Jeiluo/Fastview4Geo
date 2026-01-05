@@ -7,7 +7,6 @@
 //包含 GDALDataset 指针，提供部分工具方法（resize、统计信息）
 
 #include <string>
-#include <opencv2/opencv.hpp>
 #include "OverviewGenerator.h"
 #include "GdalCommon.h"
 
