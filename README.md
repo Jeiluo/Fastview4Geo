@@ -79,6 +79,12 @@ gcc -v
 g++ -v
 ```
 
+## Cloning the Project
+git clone --recursive https://github.com/Jeiluo/Fastview4Geo
+or
+git clone https://github.com/Jeiluo/Fastview4Geo
+git submodule update --
+git submodule update --remote
 
 ## 单独编译libtiff
 mkdir build
