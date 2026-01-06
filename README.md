@@ -130,7 +130,7 @@ cd..
 
 ## 直接编译
 ```
-install.sh
+.\install.sh
 cd build
 cmake ..
 cmake --build .
