@@ -1,5 +1,4 @@
-git clone https://github.com/Jeiluo/Fastview4Geo
-git submodule update --
+git submodule update --init
 git submodule update --remote
 
 # install libtiff
