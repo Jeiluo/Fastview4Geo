@@ -127,11 +127,11 @@ cmake --build . --config Release
 cmake --install . --prefix ./install/
 cd..
 
-
+## 直接编译
 ```
-.\install.sh
+.\install.ps1
 cd build
 cmake ..
-cmake --build .
+cmake --build . --clean-first
 cmake --install .
 ```

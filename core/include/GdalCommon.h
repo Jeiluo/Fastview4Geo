@@ -7,25 +7,15 @@
 #ifndef GDALCOMMON_H
 #define GDALCOMMON_H
 
-#include "gdal_priv.h"
-#include "cpl_conv.h"
-#include "mutex"
+#include "gdal_raster_cpp.h"
 
 // GDAL 初始化
-class GdalInitializer {
+class GdalInitializer 
+{
 public:
-    static void init(){
-        static std::once_flag flag;
-        std::call_once(flag, []() {
-            // 注册所有 GDAL 驱动
-            GDALAllRegister();
-
-#ifdef _WIN32
-            // 支持中文路径
-            CPLSetConfigOption("GDAL_FILENAME_IS_UTF8", "YES");
-            CPLSetConfigOption("SHAPE_ENCODING", "");
-#endif
-        });
+    void init()
+    {
+        GDALDataset* data;
     }
 };
 
