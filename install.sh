@@ -1,3 +1,4 @@
+git config --global core.longpaths true
 git submodule update --init
 git submodule update --remote
 
