@@ -1,4 +1,4 @@
-#include "../include/GdalCommon.h"
+#include "GdalCommon.h"
 #include <iostream>
 
 int main() {
