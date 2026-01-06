@@ -7,10 +7,10 @@
 ![Last Commit](https://img.shields.io/github/last-commit/Jeiluo/Fastview4Geo?color=green)
 
 A project to generate fast overviews for **panchromatic and multispectral images** of 4GB and above with adaptive color adjustment.  
-This library supports **C++** and **Python** usage, successfully tested on **Windows 10 and Windows 11**.  
+This library supports **C++** usage, successfully tested on **Windows 10 and Windows 11**.  
 
 一个用于生成 4GB 及以上**全色与多光谱影像快视图**的项目，具备自适应颜色调整功能。  
-该库支持 **C++** 和 **Python** 使用，已在 **Windows 10 和 Windows 11** 下测试通过。  
+该库支持 **C++**，已在 **Windows 10 和 Windows 11** 下测试通过。  
 
 Contributor: [Jeiluo Smith](https://github.com/Jeiluo), [Haojun Tang](https://donaldtrump-coder.github.io/)
 
