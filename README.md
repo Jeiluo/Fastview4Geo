@@ -135,3 +135,8 @@ cmake ..
 cmake --build . --clean-first
 cmake --install .
 ```
+
+## 可执行文件
+```
+cd Debug
+.\Fastview4Geo.exe

@@ -8,14 +8,23 @@
 #define GDALCOMMON_H
 
 #include "gdal_raster_cpp.h"
+#include <iostream>
 
 // GDAL 初始化
 class GdalInitializer 
 {
 public:
-    void init()
-    {
-        GDALDataset* data;
+    GDALDataset* openTiff(const std::string& path) {
+        GDALDataset* ds = (GDALDataset*)GDALOpen(
+        path.c_str(),
+        GA_ReadOnly     // 只读；写入用 GA_Update
+    );
+
+    if (!ds) {
+        std::cerr << "Failed to open: " << path << std::endl;
+        return nullptr;
+    }
+    return ds;
     }
 };
 

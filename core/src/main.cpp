@@ -1,10 +1,9 @@
 #include "GdalCommon.h"
-#include <iostream>
 
 int main() 
 {
     GdalInitializer gdal;
-    gdal.init();
+    gdal.openTiff("F:/Users/21910/Desktop/Remote_sense/w/1.TIF");
     std::cout << "GDAL Initialized successfully." << std::endl;
     return 0;
 }
