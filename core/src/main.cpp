@@ -1,10 +1,10 @@
-#include "GdalCommon.h"
 #include <iostream>
+#include "tiffio.h"
 
 int main() 
 {
-    GdalInitializer gdal;
-    gdal.init();
-    std::cout << "GDAL Initialized successfully." << std::endl;
+    TIFF* tif = TIFFOpen("D:/Projects/Fastview4Geo/data/TIFFExamples/BigTIFF.tif", "r");
+    TIFFClose(tif);
+    std::cout<< "TIFF file read successfully."<< std::endl;
     return 0;
 }
