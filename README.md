@@ -140,3 +140,4 @@ cmake --install .
 ```
 cd Debug
 .\Fastview4Geo.exe
+```
